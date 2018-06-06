@@ -36,4 +36,25 @@ function myPromise(executor) {
 
 //接下来是then方法，那自然而然是在prototype上了
 
-myPromise.prototype.then = function(onResolved, onRejected) {};
+myPromise.prototype.then = function(onResolved, onRejected) {
+  let self = this;
+  let promise2;
+
+  //标准上规定这两个必须是函数
+  onResolved = typeof onResolved === "function" ? onResolved : function(v) {};
+  onRejected = typeof onRejected === "function" ? onRejected : function(r) {};
+
+  //promise1传过来有三种状态
+  if (self.status === "pending") {
+    promise2 = new myPromise((resolve, reject) => {});
+    return;
+  }
+  if (self.status === "resolved") {
+    promise2 = new myPromise((resolve, reject) => {});
+    return;
+  }
+  if (self.status === "rejected") {
+    promise2 = new myPromise((resolve, reject) => {});
+    return;
+  }
+};
