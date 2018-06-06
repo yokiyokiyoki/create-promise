@@ -4,7 +4,7 @@
   "description": "> 中文意思是对于未来的约定",
   "main": "promise.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -a 127.0.0.1 -p 8091"
   },
   "repository": {
     "type": "git",
