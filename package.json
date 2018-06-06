@@ -1,0 +1,22 @@
+{
+  "name": "create-promise",
+  "version": "1.0.0",
+  "description": "> 中文意思是对于未来的约定",
+  "main": "promise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yokiyokiyoki/create-promise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yokiyokiyoki/create-promise/issues"
+  },
+  "homepage": "https://github.com/yokiyokiyoki/create-promise#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
