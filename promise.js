@@ -45,15 +45,15 @@ myPromise.prototype.then = function(onResolved, onRejected) {
   onRejected = typeof onRejected === "function" ? onRejected : function(r) {};
 
   //promise1传过来有三种状态
-  if (self.status === "pending") {
-    promise2 = new myPromise((resolve, reject) => {});
-    return;
-  }
   if (self.status === "resolved") {
     promise2 = new myPromise((resolve, reject) => {});
     return;
   }
   if (self.status === "rejected") {
+    promise2 = new myPromise((resolve, reject) => {});
+    return;
+  }
+  if (self.status === "pending") {
     promise2 = new myPromise((resolve, reject) => {});
     return;
   }
